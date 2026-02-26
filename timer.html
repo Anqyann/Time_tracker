@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer - Time Tracker</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body style="background-image: url('/src/bg_timer.jpg');" class="bg-cover bg-center bg-fixed bg-no-repeat flex flex-col min-h-screen text-gray-800">
+
+<header class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <a href="index.html" class="flex items-center gap-2 cursor-pointer hover:opacity-80 transition duration-200">
+                       <img src="\src\timer.png" alt="TimeTracker" class="w-8 h-8 object-contain">
+                        <span class="font-bold text-xl text-gray-900">TimeTracker</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-gray-900 font-medium transition duration-200">Main</a>
+                    <a href="timer.html" class="text-gray-500 hover:text-gray-900 font-medium transition duration-200">Timer</a>
+                    <a href="about.html" class="text-gray-500 hover:text-gray-900 font-medium transition duration-200">About Us</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <a href="log_in.html" class="text-gray-600 hover:text-primary font-medium transition duration-200 hidden sm:block">Log in</a>
+                    <a href="register.html" class="bg-primary text-white font-medium px-4 py-2 rounded-lg hover:bg-primaryHover transition duration-200">Sign Up</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full py-10 px-4 max-w-7xl mx-auto">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            
+            <div class="lg:col-span-1 bg-black text-white p-8 rounded-3xl shadow-2xl flex flex-col items-center border border-zinc-700">
+                
+                <h1 class="text-2xl font-bold mb-8 text-white">Focus Session</h1>
+
+                <div class="w-full mb-8">
+                    <input type="text" placeholder="What are you working on?" 
+                        class="w-full px-4 py-3 text-center bg-gray-200 text-black placeholder-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-400 transition duration-200 border-none">
+                </div>
+
+                <div class="mb-10">
+                    <span class="text-6xl font-mono font-bold tracking-wider text-white">
+                        00:00:00
+                    </span>
+                </div>
+
+                <button class="w-32 h-32 bg-white hover:bg-gray-200 text-black font-bold text-2xl rounded-full transition-all duration-300 flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.2)] mb-6">
+                    Start
+                </button>
+
+                <button class="text-gray-400 border border-gray-600 font-bold py-2 px-10 rounded-full hover:bg-white hover:text-black hover:border-white transition-all duration-200">
+                    Stop
+                </button>
+
+            </div>
+
+            <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                
+                <div class="bg-gray-50 px-6 py-5 border-b border-gray-200">
+                    <h2 class="text-lg font-bold text-black">Recent Sessions</h2>
+                </div>
+                
+                <div class="overflow-x-auto min-h-[400px]">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-white border-b border-gray-200 text-gray-400 text-xs uppercase tracking-wider">
+                                <th class="py-4 px-6 font-semibold">Task Name</th>
+                                <th class="py-4 px-6 font-semibold">Start Time</th>
+                                <th class="py-4 px-6 font-semibold">End Time</th>
+                                <th class="py-4 px-6 font-semibold text-right">Duration</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-white w-full border-t border-gray-200 mt-auto">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <p>&copy; 2026 Time Tracker. All rights reserved.</p>
+            <div class="mt-4 md:mt-0 space-x-6 flex">
+                <a href="#" class="hover:text-black transition duration-200">Terms of Service</a>
+                <a href="#" class="hover:text-black transition duration-200">Privacy Policy</a>
+                <a href="#" class="hover:text-black transition duration-200">Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
